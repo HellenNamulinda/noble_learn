@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'noblelearn_backend.urls'
+ROOT_URLCONF = 'noblelearn.urls'
 
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -65,7 +65,7 @@ TEMPLATES = [{
     },
 }]
 
-WSGI_APPLICATION = 'noblelearn_backend.wsgi.application'
+WSGI_APPLICATION = 'noblelearn.wsgi.application'
 
 DATABASE_URL = config('DATABASE_URL', default=config('DB_URL', default='')).strip()
 if not DATABASE_URL:
